@@ -27,3 +27,15 @@
     include ':mapbox-react-native-mapbox-gl'
     project(':mapbox-react-native-mapbox-gl').projectDir = new File(rootProject.projectDir, '../node_modules/@mapbox/react-native-mapbox-gl/android/rctmgl')
     ```
+
+5. go to __*yourProject/android/app/src/main/java/com/yourProject/MainApplication.java*__
+
+    insert after ```import com.facebook.soloader.SoLoader```:
+    ```java
+    import com.mapbox.rctmgl.RCTMGLPackage;
+    ```
+
+    insert inside ```getPackages()``` after ```new MainReactPackage(),```
+    ```java
+    new RCTMGLPackage()
+    ```
