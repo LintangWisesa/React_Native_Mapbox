@@ -18,7 +18,11 @@
 3. Go to __*yourProject/android/app/build.gradle*__
     ```java
     dependencies {
-        compile project(':mapbox-react-native-mapbox-gl')
+        compile (project(':mapbox-react-native-mapbox-gl')) {
+            compile ('com.squareup.okhttp3:okhttp:3.6.0') {
+                force = true
+            }
+        }
     }
     ```
 
