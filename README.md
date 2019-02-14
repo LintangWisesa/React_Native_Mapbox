@@ -2,7 +2,8 @@
     ```bash
         $ npm i @mapbox/react-native-mapbox-gl
     ```
-2. go to yourProject/android/build.gradle
+
+2. go to __*yourProject/android/build.gradle*__
     ```java
     allprojects {
         repositories {
@@ -11,5 +12,12 @@
             maven { url "https://jitpack.io" }
             maven { url "https://maven.google.com" }
         }
+    }
+    ```
+
+3. go to __*yourProject/android/app/build.gradle*__
+    ```java
+    dependencies {
+        compile project(':mapbox-react-native-mapbox-gl')
     }
     ```
