@@ -21,3 +21,9 @@
         compile project(':mapbox-react-native-mapbox-gl')
     }
     ```
+
+4. go to __*yourProject/android/settings.gradle*__
+    ```java
+    include ':mapbox-react-native-mapbox-gl'
+    project(':mapbox-react-native-mapbox-gl').projectDir = new File(rootProject.projectDir, '../node_modules/@mapbox/react-native-mapbox-gl/android/rctmgl')
+    ```
