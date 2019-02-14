@@ -1,0 +1,3 @@
+rootProject.name = 'tes_mapbox'
+
+include ':app'
