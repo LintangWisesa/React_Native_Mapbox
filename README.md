@@ -46,4 +46,4 @@
 
 6. Sign up to [mapbox.com](https://www.mapbox.com/) & get your access token!
     
-    ![token](./1.png)
+    ![token](./token.png)
